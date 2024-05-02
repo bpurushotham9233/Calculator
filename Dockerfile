@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file from the host into the container
-COPY target/Calculator-1.0-SNAPSHOT.jar /app/app.jar
+COPY /target/Calculator-1.0-SNAPSHOT.jar /app/app.jar
 
 # Expose any ports your application uses
 EXPOSE 8082
